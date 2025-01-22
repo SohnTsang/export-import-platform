@@ -1,5 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Global
+venv/
+*.pyc
+__pycache__/
+.env
+
 # dependencies
 /node_modules
 /.pnp
@@ -21,3 +27,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Django
+backend/db.sqlite3
+backend/media/
+backend/static/
+
+# React
+frontend/node_modules/
+frontend/build/
+frontend/.env
